@@ -37,22 +37,15 @@
                     <br> <br>
                     DE BEURS
                     <br> <br>
-                    Neude 37-39
+                    Adres: Neude 37-39
                     <br>
-                    3512 AG Utrecht
+                    Postcode: 3512 AG Utrecht
                     <br>
-                    e. info@debeursutrecht.nl
+                    E-mail: info@debeursutrecht.nl
 
                     <br>
-                    Tel: 030-2333007
+                    Telefoon: 030-2333007
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="mainbar">
                 <table id="timetable">
                     <tr>
                         <td>Maandag</td>
@@ -83,6 +76,32 @@
                         <td>11.00-01.00</td>
                     </tr>
                 </table>
+            </div>
+            <div class="sidebar">
+                <h1>Contact</h1>
+                <form id='my-form' action="process.php" method="post">
+                    <div class="form-group">
+                        <label for="">Naam</label>
+                        <input type="text" name="firstName"> 
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="">Telefoon</label>
+                        <input type="text" name="firstName"> 
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="">Bericht</label>
+                        <textarea name="message" id="" cols="30" rows="4"></textarea>
+                    </div>
+                    <br>
+                    <input type="submit" name="submit" value="Verstuur">
+                </form>
             </div>
         </div>
     </section>
