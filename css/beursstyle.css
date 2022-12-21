@@ -226,7 +226,56 @@ a {
     grid-column-start: 2;
     grid-column-end: 4;
   }
+  #grid-pic02 {
+    overflow: hidden;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 
+
+  #grid-pic12 {
+    overflow: hidden;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+
+  #grid-pic22 {
+    overflow: hidden;
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  #grid-pic32 {
+    overflow: hidden;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #grid-pic42 {
+    overflow: hidden;
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  #grid-pic52 {
+    overflow: hidden;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #grid-pic62 {
+    overflow: hidden;
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
 
 .container .grid-container > div > a >img {
     width: 100%;
