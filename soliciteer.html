@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/beursstyle.css">
+    <script src="https://use.fontawesome.com/07aeb51d5b.js"></script>
+    <title>De Beurs Utrecht | Soliciteer</title>
+</head>
+<body>
+    <header>
+        <div id="whitebar"></div>
+        <div class="container">
+            <div id="branding">
+                <img id="logo" src="/img/logo_beurs.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reserveren.html">Reserveren</a></li>
+                    <li><a href="debeurs_menu_drank.pdf" target="_blank">Menu</a></li>
+                    <li><a href="dansen.html">Dansen</a></li>
+                    <li><a href="foto's.html">Foto's</a></li>
+                    <li><a href="debeurs.html">De Beurs</a></li>
+                    <li  class="current"><a href="werkenbij.html">Werken Bij</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1 class="kopje">Sollicitatieformulier</h1>
+            <p>
+                Wij zijn op zoek naar enthousiaste collega’s. Zowel parttime als fulltime, met of zonder ervaring, ook leidinggevend. <br>
+                Dus zoek je een baan en voldoe je aan dit profiel, vul dan het sollicitatieformulier in! Wij reageren binnen 1 werkdag.
+            </p>
+            <form id='my-form' action="process.php" method="post">
+                <div class="form-group">
+                    <label for="">Naam</label>
+                    <input type="text" name="naam"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Woonplaats</label>
+                    <input type="text" name="woonplaats"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Telefoon</label>
+                    <input type="text" name="telefoon"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Geboortedatum</label>
+                    <input type="date" name="datum"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Nationaliteit</label>
+                    <input type="text" name="nationaliteit"> 
+                </div>
+                <br>
+                <div>
+                    <h1 class="kopje">CV/Foto</h1>
+                    <p>Voeg hier je CV of een spontane foto van jezelf als bijlage toe</p>
+                    <label for="file-upload" class="custom-file-upload">
+                    </label>
+                    <input id="file-upload" type="file"/>
+                </div>
+                <h1 class="kopje">Beschikbaarheid en andere vragen</h1>
+                <div class="form-group">
+                    <label for="">Hoeveel uur per week ben je beschikbaar?</label>
+                    <input type="text" name="beschikbaar"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Op welke dagen ben je beschikbaar?</label>
+                    <input type="text" name="dagen"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Per wanneer ben je beschikbaar?</label>
+                    <input type="text" name="beschikbaar"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Heb je relevante werkervaring? Zo ja, welke ervaring heb je?</label>
+                    <input type="text" name="ervaring"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Ken je collega's van ons? Zo ja, wie?</label>
+                    <input type="text" name="collega"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Op welke vacature solliciteer je?</label>
+                    <input type="text" name="vacature"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Hoe ben je bij deze vacature gekomen?</label>
+                    <input type="text" name="gekomen"> 
+                </div>
+                <br>
+                <h1 class="kopje">Motivatie</h1>
+                <div class="form-group">
+                    <label for="">Omschrijf jezelf in drie woorden</label>
+                    <input type="text" name="woorden"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Waarom wil je bij ons werken?</label>
+                    <input type="text" name="waarom"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Wat wil je bij ons leren?</label>
+                    <input type="text" name="leren"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Wat vind je het leukst aan werken in een teamverband?</label>
+                    <input type="text" name="teamverband"> 
+                </div>
+                <br>
+                <h1 class="kopje"></h1>
+                <div class="form-group">
+                    <label for="">Laat nog een bericht achter als je nog iets wil toevoegen</label>
+                    <textarea name="message" id="" cols="30" rows="4"></textarea>
+                </div>
+                <br>
+                <h1 class="kopje">Verstuur</h1>
+                <p>Heb je je gegeven gecontroleerd? Verstuur dan nu je sollicitatie</p>
+                <input type="submit" name="submit" value="Verstuur">
+            </form>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <table id="footerinfo">
+            <tr>
+                <td><i class="fa fa-envelope"></i></td>
+                <td>info@debeursutrecht.nl</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-phone"></i></td>
+                <td>030-2333007</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-map-signs" aria-hidden="true"></i></td>
+                <td>Neude 37/39, 3512 AG Utrecht</td>
+            </tr>
+        </table>
+
+        <table id="footersocials">
+            <tr>
+                <td><a class="socialfooter" href="https://www.facebook.com/CafeDeBeurs/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></td>
+                <td><a class="socialfooter" href="https://www.facebook.com/CafeDeBeurs/" target="_blank">facebook.com/CafeDeBeurs </a></td>
+            </tr>
+            <tr>
+                <td><a class="socialfooter" href="https://www.instagram.com/debeursutrecht/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></td>
+                <td><a class="socialfooter" href="https://www.instagram.com/debeursutrecht/" target="_blank">@debeursutrecht</a></td>
+            </tr>
+        </table>
+        <p id="author">Pieter El Sharouni &copy; 2022</p>
+    </footer>
+</body>
+</html>
